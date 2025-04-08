@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="test.css">
-    <title>Document</title>
+    <script src="script.js" defer></script>
+    <title>BU Playing Exam I</title>
 </head>
 <body>
     <header>
@@ -25,7 +26,7 @@
                 <th>F1 - Cut</th>
             </tr>
             <tr>
-                <td>Score: 10</td>
+                <td>Score: <span id="f1-score">4</span></td>
             </tr>
         </table>
         <table>
@@ -36,42 +37,52 @@
             </tr>
             <tr>
                 <td>1</td>
-                <td class="result-cell"></td>
+                <td class="result-cell f1-cell"></td>
                 <td>X</td>
             </tr>
             <tr>
                 <td>2</td>
-                <td class="result-cell"></td>
+                <td class="result-cell f1-cell"></td>
                 <td>X</td>
             </tr>
             <tr>
                 <td>3</td>
-                <td class="result-cell"></td>
+                <td class="result-cell f1-cell"></td>
                 <td>X</td>
             </tr>
             <tr>
                 <td>4</td>
-                <td class="result-cell"></td>
+                <td class="result-cell f1-cell"></td>
                 <td>X</td>
             </tr>
             <tr>
                 <td>5</td>
-                <td class="result-cell"></td>
+                <td class="result-cell f1-cell"></td>
                 <td>X</td>
             </tr>
             <tr>
                 <td>6</td>
-                <td class="result-cell"></td>
+                <td class="result-cell f1-cell"></td>
                 <td>X</td>
             </tr>
             <tr>
                 <td>7</td>
-                <td class="result-cell"></td>
+                <td class="result-cell f1-cell"></td>
                 <td>X</td>
             </tr>
             <tr>
                 <td>8</td>
-                <td class="result-cell"></td>
+                <td class="result-cell f1-cell"></td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td class="result-cell f1-cell"></td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td class="result-cell f1-cell"></td>
                 <td>X</td>
             </tr>
         </table>
@@ -136,9 +147,19 @@
                 <td class="result-cell"></td>
                 <td>X</td>
             </tr>
+            <tr>
+                <td>9</td>
+                <td class="result-cell"></td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td class="result-cell"></td>
+                <td>X</td>
+            </tr>
         </table>
     </div>
-    <div class="drill-section" id="stop">
+    <div class="drill-section" id="follow">
         <div class="section-header">
             <h2>F3 - Follow</h2>
             <h3>BU Exam I - Fundamentals</h3>
@@ -198,7 +219,365 @@
                 <td class="result-cell"></td>
                 <td>X</td>
             </tr>
+            <tr>
+                <td>9</td>
+                <td class="result-cell"></td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td class="result-cell"></td>
+                <td>X</td>
+            </tr>
         </table>
     </div>
+    <div class="drill-section" id="draw">
+        <div class="section-header">
+            <h2>F4 - Draw</h2>
+            <h3>BU Exam I - Fundamentals</h3>
+        </div>
+        <img src="BU_Exam-I_Fundamentals/BU_Exam-I_Fundamentals-4.png" width="100%">
+        <table>
+            <tr>
+                <th>F4 - Draw</th>
+            </tr>
+            <tr>
+                <td>Score: 10</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>Shot</td>
+                <td>Result</td>
+                <td>Next Position</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td class="result-cell"></td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td class="result-cell"></td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td class="result-cell"></td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td class="result-cell"></td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td class="result-cell"></td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td class="result-cell"></td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td class="result-cell"></td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td class="result-cell"></td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td class="result-cell"></td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td class="result-cell"></td>
+                <td>X</td>
+            </tr>
+        </table>
+    </div>
+    <div class="drill-section" id="stun">
+        <div class="section-header">
+            <h2>F5 - Stun</h2>
+            <h3>BU Exam I - Fundamentals</h3>
+        </div>
+        <img src="BU_Exam-I_Fundamentals/BU_Exam-I_Fundamentals-5.png" width="100%">
+        <table>
+            <tr>
+                <th>F5 - Stun</th>
+            </tr>
+            <tr>
+                <td>Score: 10</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>Shot</td>
+                <td>Result</td>
+                <td>Next Position</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td class="result-cell"></td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td class="result-cell"></td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td class="result-cell"></td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td class="result-cell"></td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td class="result-cell"></td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td class="result-cell"></td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td class="result-cell"></td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td class="result-cell"></td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td class="result-cell"></td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td class="result-cell"></td>
+                <td>X</td>
+            </tr>
+        </table>
+    </div>
+    <div class="drill-section" id="potting">
+        <div class="section-header">
+            <h2>F6 - Potting</h2>
+            <h3>BU Exam I - Fundamentals</h3>
+        </div>
+        <img src="BU_Exam-I_Fundamentals/BU_Exam-I_Fundamentals-6.png" width="100%">
+        <table>
+            <tr>
+                <th>F6 - Potting</th>
+            </tr>
+            <tr>
+                <td>Score: 10</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>Shot</td>
+                <td>Result</td>
+                <td>Next Position</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td class="result-cell"></td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td class="result-cell"></td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td class="result-cell"></td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td class="result-cell"></td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td class="result-cell"></td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td class="result-cell"></td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td class="result-cell"></td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td class="result-cell"></td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td class="result-cell"></td>
+                <td>X</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td class="result-cell"></td>
+                <td>X</td>
+            </tr>
+        </table>
+    </div>
+    <div class="drill-section" id="follow">
+        <div class="section-header">
+            <h2>F7 - Wagon Wheel</h2>
+            <h3>BU Exam I - Fundamentals</h3>
+        </div>
+        <img src="BU_Exam-I_Fundamentals/BU_Exam-I_Fundamentals-7.png" width="100%">
+        <table>
+            <tr>
+                <th>F7 - Wagon Wheel</th>
+            </tr>
+            <tr>
+                <td>Score: 10</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>Shot</td>
+                <td>Shot 1</td>
+                <td>Shot 2</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td class="result-cell"></td>
+                <td class="result-cell"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td class="result-cell"></td>
+                <td class="result-cell"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td class="result-cell"></td>
+                <td class="result-cell"></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td class="result-cell"></td>
+                <td class="result-cell"></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td class="result-cell"></td>
+                <td class="result-cell"></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td class="result-cell"></td>
+                <td class="result-cell"></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td class="result-cell"></td>
+                <td class="result-cell"></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td class="result-cell"></td>
+                <td class="result-cell"></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td class="result-cell"></td>
+                <td class="result-cell"></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td class="result-cell"></td>
+                <td class="result-cell"></td>
+            </tr>
+        </table>
+    </div>
+    <div class="drill-section" id="follow">
+        <div class="section-header">
+            <h2>F8 - Target Drill</h2>
+            <h3>BU Exam I - Fundamentals</h3>
+        </div>
+        <img src="BU_Exam-I_Fundamentals/BU_Exam-I_Fundamentals-8.png" width="100%">
+        <table>
+            <tr>
+                <th>F8 - Target Drill</th>
+            </tr>
+            <tr>
+                <td>Score: 10</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>Target</td>
+                <td>Shot 1</td>
+                <td>Shot 2</td>
+                <td>Shot 3</td>
+                <td>Shot 4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td class="result-cell"></td>
+                <td class="result-cell"></td>
+                <td class="result-cell"></td>
+                <td class="result-cell"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td class="result-cell"></td>
+                <td class="result-cell"></td>
+                <td class="result-cell"></td>
+                <td class="result-cell"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td class="result-cell"></td>
+                <td class="result-cell"></td>
+                <td class="result-cell"></td>
+                <td class="result-cell"></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td class="result-cell"></td>
+                <td class="result-cell"></td>
+                <td class="result-cell"></td>
+                <td class="result-cell"></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td class="result-cell"></td>
+                <td class="result-cell"></td>
+                <td class="result-cell"></td>
+                <td class="result-cell"></td>
+            </tr>
+        </table>
+    </div>
+    
 </body>
 </html>

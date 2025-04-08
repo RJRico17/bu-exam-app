@@ -43,10 +43,12 @@
         padding: 5px;
         margin: 15px;
     }
-    .result-cell {
-        background-color: green;
+    .good-pot {
+        background-color: #186643;
     }
-
+    .bad-pot {
+        background-color: rgb(207, 48, 48);
+    }
     .drill-section {
         margin-bottom: 40px;
     }
