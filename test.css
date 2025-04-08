@@ -1,0 +1,53 @@
+@media (max-width:769px) {
+    html, body {
+        margin: 0;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    header {
+        background-color: #105134;
+        color: white;
+        padding: 5px;
+        text-align: center;
+    }
+    a:link {
+        color: white;
+        text-decoration: none;
+    }
+    a:visited { 
+        color: white;
+        text-decoration: none;
+    }
+    .current-score {
+        background-color: #105134;
+        color: white;
+        text-align: center;
+        padding: 5px;
+        top: 0;
+        position: sticky;
+    }
+    table {
+        border-collapse: collapse;
+        width: 90%;
+        margin: auto;
+    }
+    td,th {
+        border: 1px solid black;
+        padding: 15px;
+        width: 33%;
+        text-align: center;
+    }
+    .section-header {
+        text-align: center;
+        background-color: #e3e3e3;
+        color: #105134;
+        padding: 5px;
+        margin: 15px;
+    }
+    .result-cell {
+        background-color: green;
+    }
+
+    .drill-section {
+        margin-bottom: 40px;
+    }
+}
