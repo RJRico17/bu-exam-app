@@ -22,8 +22,8 @@ const userProgress = {
 //     resultCell[i].onclick = cyclePot;
 // }
 const resultCell = document.getElementsByClassName("result-cell");
-resultCell.array.forEach(result => {
-    result.addEventListener('click', function() {
+resultCell.array.forEach(cell => {
+    cell.addEventListener('click', function() {
         cyclePot(this);
     })
 });
@@ -50,7 +50,9 @@ function cyclePot(button) {
         this.classList.remove("good-pot");
         this.classList.add("bad-pot");
         document.getElementById("f1-score").innerHTML = userScore.f1Score;
-        this.nextElementSibling.innerHTML = userProgress.cutProgress;
+        if (siblind.d === this.id) {
+            this.nextElementSibling.innerHTML = userProgress.cutProgress;
+        }
     }
 
 
@@ -77,11 +79,15 @@ function cyclePot(button) {
         if (userScore.f1Bonus > 0 && userScore.f1Score >= 10) {
             userScore.f1Score = 10;
             document.getElementById("f1-score").innerHTML = "10";
-            this.nextElementSibling.innerHTML = userProgress.cutProgress;
+            if (siblind.d === this.id) {
+                this.nextElementSibling.innerHTML = userProgress.cutProgress;
+            }
         }
         else {
             document.getElementById("f1-score").innerHTML = userScore.f1Score;
-            this.nextElementSibling.innerHTML = userProgress.cutProgress;
+            if (siblind.d === this.id) {
+                this.nextElementSibling.innerHTML = userProgress.cutProgress;
+            }
         }
     }
     updateScore();
