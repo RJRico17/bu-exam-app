@@ -1,10 +1,10 @@
 const userScore = {
     f1Score: 4,
-    f1Bonus: 0,
-    f2Score: 0,
-    f3Score: 0,
-    f4Score: 0,
-    f5Score: 0,
+    f1Bonus: 4,
+    f2Score: 4,
+    f3Score: 4,
+    f4Score: 4,
+    f5Score: 4,
     f6Score: 0,
     f7Score: 0,
     f8Score: 0,
@@ -17,24 +17,34 @@ const userProgress = {
     drawProgress: 4,
     stunProgress: 4,
 }
+// const resultCell = document.getElementsByClassName("result-cell");
+// for (i=0;i<resultCell.length;i++) {
+//     resultCell[i].onclick = cyclePot;
+// }
 const resultCell = document.getElementsByClassName("result-cell");
-for (i=0;i<resultCell.length;i++) {
-    resultCell[i].onclick = cyclePot;
-}
+resultCell.array.forEach(result => {
+    result.addEventListener('click', function() {
+        cyclePot(this);
+    })
+});
 
 
 //BEEFY FUNCTION
-function cyclePot() {
+function cyclePot(button) {
+    const sibling = button.nextElementSibling;
+    const drillType = this.id;
+    alert(drillType);
+    //CHANGE FROM MAKE TO MISS
     if (this.classList.contains("good-pot")) {
         userScore.f1Score--;
         userScore.f1Bonus--;
         if (userProgress.cutProgress===7){
             userProgress.cutProgress--;
         }
-        else if (1 < userProgress.cutProgress <= 7 ){
-            userProgress.cutProgress-=2;
+        else if (userProgress.cutProgress < 7){
+            userProgress.cutProgress -= 2;
         }
-        else if (userProgress.cutProgress <= 1) {
+        else if (userProgress.cutProgress === 1) {
             userProgress.cutProgress = 1;
         }
         this.classList.remove("good-pot");
@@ -42,17 +52,22 @@ function cyclePot() {
         document.getElementById("f1-score").innerHTML = userScore.f1Score;
         this.nextElementSibling.innerHTML = userProgress.cutProgress;
     }
+
+
+    //CHANGE FROM MISS TO NONE
     else if (this.classList.contains("bad-pot")) {
         this.classList.remove("bad-pot");
         userProgress.cutProgress++;
         this.nextElementSibling.innerHTML = "";
     }
+
+
+    //CHANGE FROM NONE TO MAKE
     else {
         this.classList.add("good-pot");
         if (userProgress.cutProgress===7){
             userProgress.cutProgress=7;
             userScore.f1Bonus++;
-            console.log(userScore.f1Bonus);
         }
         else if (userProgress.cutProgress!=7){
             userProgress.cutProgress++;
@@ -70,7 +85,7 @@ function cyclePot() {
         }
     }
     updateScore();
-    alert(userProgress.cutProgress)
+    alert(userProgress.cutProgress);
 }
 
 
